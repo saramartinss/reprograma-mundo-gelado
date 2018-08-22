@@ -1,0 +1,118 @@
+/* GERAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    letter-spacing: .0625em;
+    background-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.001vw;
+}
+
+.greyscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 1s;
+} 
+
+.greyscale:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+} 
+
+/* NAVEGAÇÃO */
+
+.nav {
+    background-color: #a0bed0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 80px;
+    z-index: 99;
+}
+
+.nav__menu {
+    display: flex;
+    width: 30vw;
+    margin-left: 62vw;
+    margin-top: 2vw;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.nav__menu li {
+    list-style: none; 
+    display: inline;
+}
+
+.nav__menu a {
+    color: #fff;
+    padding: 2rem 1.5rem;
+    font-weight: bold;
+}
+
+/* PRIMEIRA SECTION*/
+
+.principal {
+    
+}
+.principal__sobre {
+    padding-top: 80px;
+    height: 638px;
+    background-image: url("../img/foto-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-content: center;
+}
+
+.principal__sobre h1 {
+    margin-top: 12vh;
+    font-size: 7vw;
+    font-family: 'Varela Round';
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: .8rem;
+    display: flex;
+    justify-content: center;
+    color: rgba(255,255,255,.7);
+}
+
+.principal__sobre p {
+    display: flex;
+    width: 35vw;
+    max-width: 35vw;
+    text-align: center;
+    font-size: 1.5vw;
+    color: rgba(255,255,255,.5);
+    margin-bottom: 3rem;
+}
+
+.principal__sobre a {
+    display: flex;
+    justify-content: center;
+    width: 18vw;
+    padding: 1.5%;
+    text-transform: uppercase;
+    background-color: #a0bed0;
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.principal__sobre a:hover {
+    background-color: #007bff;
+    transition: all 1s;
+}
+
+/* SEGUNDA SECTION */
+
+.principal__agencia {
+    
+}
