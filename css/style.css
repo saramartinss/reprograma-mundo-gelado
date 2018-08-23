@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-size: 16px;
     letter-spacing: .0625em;
     background-color: #f8f9fa;
 }
@@ -56,23 +57,52 @@ a {
     color: #fff;
     padding: 2rem 1.5rem;
     font-weight: bold;
+    font-size: 13px;
 }
 
-/* PRIMEIRA SECTION*/
-
-.principal {
-    
+.nav__menu img {
+    display: none;
 }
-.principal__sobre {
+
+@media (max-width: 768px) {
+    .sobre__titulo {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .nav {
+        background-color: #fff;
+    }
+    .nav__menu li {
+        display: none;
+    }
+
+    .nav__menu img {
+        display: inline;
+        width: 30px;
+        height: 30px;
+        margin-top: 12px;
+    }
+
+    .sobre__titulo {
+        text-align: center;
+    }
+}
+
+/* SECTION SOBRE*/
+
+.sobre {
     padding-top: 15vh;
-    height: 99vh;
+    height: 95vh;
     background-image: url("../img/foto-banner.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
-    align-content: center;
+    background-size: cover;
+    text-align: center;
 }
 
-.principal__sobre h1 {
+.sobre__titulo {
     margin-top: 12vh;
     font-size: 7vw;
     font-family: 'Varela Round';
@@ -84,22 +114,20 @@ a {
     color: rgba(255,255,255,.7);
 }
 
-.principal__sobre p {
+.sobre__subtitulo {
     display: flex;
     width: 35vw;
     max-width: 35vw;
-    text-align: center;
-    font-size: 1.5vw;
+    font-size: 18px;
     color: rgba(255,255,255,.5);
     margin-bottom: 3rem;
 }
 
-.principal__sobre a {
-    display: flex;
-    justify-content: center;
-    width: 18vw;
-    max-width: 18vw;
-    padding: 1.5%;
+.sobre__btn {
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    font-size: 13px;
     text-transform: uppercase;
     background-color: #a0bed0;
     font-family: 'Varela Round', Arial, Helvetica, sans-serif;
@@ -107,21 +135,23 @@ a {
     border-radius: 5px;
 }
 
-.principal__sobre a:hover {
+.sobre__btn:hover {
     background-color: #007bff;
     transition: all 1s;
 }
 
-/* SEGUNDA SECTION */
+/* SECTION AGENCIA */
 
-.principal__agencia {
-    height: 50vh;
-    background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%);
+.agencia {
     display: flex;
+    height: 50vh;
+    width: 100vw;
     flex-direction: column;
+    background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%);
 }
 
-.principal__agencia h2 {
+.agencia__titulo {
+    display: flex;
     color: #fff;
     font-weight: lighter;
     text-align: center;
@@ -129,7 +159,7 @@ a {
     padding-bottom: 4vh;
 }
 
-.principal__agencia p {
+.agencia__conteudo {
     color: rgba(255,255,255,.5);
     line-height: 1.5;
     display: flex;
@@ -139,3 +169,18 @@ a {
     margin-left: 22.5vw;
     letter-spacing: .1vw;
 }
+
+@media (max-width: 768px) {
+    .agencia {
+        height: 58vh;
+    }
+}
+
+@media (max-width: 420px) {
+    .agencia {
+        height: 80vh;
+    }
+}
+
+/* SECTION DESTINOS */
+
