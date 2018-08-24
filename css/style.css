@@ -17,6 +17,7 @@ a {
     font-size: 1.001vw;
 }
 
+
 .greyscale {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -27,6 +28,18 @@ a {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
 } 
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.img-responsive {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 
 /* NAVEGAÇÃO */
 
@@ -64,33 +77,6 @@ a {
     display: none;
 }
 
-@media (max-width: 768px) {
-    .sobre__titulo {
-        width: 45vw;
-    }
-}
-
-@media (max-width: 420px) {
-
-    .nav {
-        background-color: #fff;
-    }
-    .nav__menu li {
-        display: none;
-    }
-
-    .nav__menu img {
-        display: inline;
-        width: 30px;
-        height: 30px;
-        margin-top: 12px;
-    }
-
-    .sobre__titulo {
-        text-align: center;
-    }
-}
-
 /* SECTION SOBRE*/
 
 .sobre {
@@ -104,7 +90,7 @@ a {
 
 .sobre__titulo {
     margin-top: 12vh;
-    font-size: 7vw;
+    font-size: 100px;
     font-family: 'Varela Round';
     text-transform: uppercase;
     font-weight: lighter;
@@ -145,7 +131,7 @@ a {
 .agencia {
     display: flex;
     height: 50vh;
-    width: 100vw;
+    width: auto;
     flex-direction: column;
     background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%);
 }
@@ -170,17 +156,264 @@ a {
     letter-spacing: .1vw;
 }
 
+/* SECTION DESTINOS */
+
+.siberia {
+    display: flex;
+    margin: 8% auto;
+}
+.siberia__img {
+    width: 70%;
+    height: 60%;
+}
+
+.siberia__conteudo {
+    display: inline-block;
+    margin-top: 15%;
+    padding-left: 3%;
+    width: 30%;
+    height: 25%;
+    border-left: 7px solid #829dad;
+}
+
+.siberia__conteudo h4 {
+    font-size: 22px;
+    font-weight: lighter;
+    color: inherit;
+}
+
+.siberia__conteudo p {
+    color: rgba(0, 0, 0, .5);
+    letter-spacing: 1.1px;
+}
+
+.groenlandia {
+    display: flex;
+}
+
+.groenlandia img {
+    width: 50%;
+    height: 55%;
+}
+
+.groenlandia__conteudo {
+    background-color: #212529;
+    padding: 9% 3%;
+    width: 50%;
+}   
+
+.groenlandia__conteudo h4 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.groenlandia__conteudo p {
+    color: rgba(255,255,255,.5);
+    font-size: 15px;
+}
+
+hr {
+    width: 130px;
+    height: 4px;
+    background-color: #007bff;
+    border-color: transparent;
+    margin-top: 15px;
+}
+
+.groenlandia__conteudo hr {
+    margin-left: 0;
+}
+
+.antartida__conteudo hr {
+    margin-right: 0;
+}
+
+.antartida {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.antartida img {
+    width: 50%;
+    height: 55vh;
+}
+
+.antartida__conteudo {
+    background-color: #212529;
+    padding: 10% 3%;
+    text-align: right;  
+    width: 50%;
+
+}
+
+.antartida__conteudo h4 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.antartida__conteudo p {
+    color: rgba(255,255,255,.5);
+    font-size: 15px;
+}
+
+/* RODAPE */
+
+.rodape {
+    display: flex;
+    height: 50vh;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #212529;
+    margin-top: 8%;
+}
+
+.rodape__tel {
+    color: #829dad;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.rodape__redes-sociais {
+    display: flex;
+    flex-direction: row;
+    margin: 5% auto;
+}
+
+.rodape__redes-sociais img {
+    padding: 0 10px;
+}
+
+.rodape__copy {
+    color: rgba(255,255,255,.5);
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+/* MEDIA QUERIES */
+
 @media (max-width: 768px) {
+    .sobre__titulo {
+        font-size: 80px;
+    }
+
     .agencia {
-        height: 58vh;
+        height: 66vh;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0% 4%;
+    }
+
+    .siberia__conteudo {
+        margin-top: 3%;
+    }
+
+    .gro-ant {
+        width: 100vw;
+    }
+
+    .groenlandia {
+        
+        width: 680px;
+        
+    }
+
+    .antartida {
+        width: 680px;
+    }
+
+    .groenlandia img {
+        width: 340px;
+        height: 57%;
+    }
+
+    .antartida img {
+        width: 340px;;
+        height: 55%;
+    } 
+
+    .groenlandia__conteudo {
+        height: 227px;
+        padding: 3.5%;
+        width: 340px;
+    }
+
+    .antartida__conteudo {
+        width: 340px;
+        height: 227px;
+        padding: 3.5%;
     }
 }
 
 @media (max-width: 420px) {
+    .nav {
+        background-color: #fff;
+    }
+    .nav__menu li {
+        display: none;
+    }
+
+    .nav__menu img {
+        display: inline;
+        width: 30px;
+        height: 30px;
+        margin-top: 12px;
+    }
+
+    .sobre__titulo {
+        text-align: center;
+        font-size: 50px;
+        
+    }
+
+    .sobre__subtitulo {
+        font-size: 18px;
+
+    }
+
     .agencia {
         height: 80vh;
     }
+
+    .siberia {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .siberia__conteudo {
+        width: 300px;
+        text-align: center;
+        
+    }
+
+    .siberia__img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .groenlandia {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 335px;
+        text-align: center;
+    }
+
+    .antartida {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 335px;
+        margin-top: 30px;
+        
+    }
+
+    .antartida__conteudo {
+        text-align: center;
+    }
 }
-
-/* SECTION DESTINOS */
-
