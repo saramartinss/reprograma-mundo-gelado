@@ -300,8 +300,14 @@ hr {
         font-size: 80px;
     }
 
+    .sobre__subtitulo {
+        font-size: 30px;
+        width: 85vw;
+        max-width: none;
+    }
+
     .agencia {
-        height: 66vh;
+        height: 46vh;
     }
 
     .container {
@@ -333,7 +339,7 @@ hr {
     }
 
     .antartida img {
-        width: 340px;;
+        width: 340px;
         height: 55%;
     } 
 
@@ -348,9 +354,21 @@ hr {
         height: 227px;
         padding: 3.5%;
     }
+
+    .rodape {
+        height: 35vh;
+    }
+
+    hr {
+        background-color: transparent;
+    }
 }
 
 @media (max-width: 420px) {
+
+    hr {
+        background-color: transparent;
+    }
     .nav {
         background-color: #fff;
     }
@@ -373,6 +391,8 @@ hr {
 
     .sobre__subtitulo {
         font-size: 18px;
+        width: 95vw;
+        max-width: none;
 
     }
 
@@ -388,7 +408,7 @@ hr {
     .siberia__conteudo {
         width: 300px;
         text-align: center;
-        
+        border: none;
     }
 
     .siberia__img {
